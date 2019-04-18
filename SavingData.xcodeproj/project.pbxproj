@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1FA4362267E7DC00770095 /* FileManager+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FA4352267E7DC00770095 /* FileManager+Ext.swift */; };
 		5EFFD1D622653C09002C05FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFFD1D522653C09002C05FC /* AppDelegate.swift */; };
 		5EFFD1D822653C09002C05FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFFD1D722653C09002C05FC /* ViewController.swift */; };
 		5EFFD1DB22653C09002C05FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFFD1D922653C09002C05FC /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E1FA4352267E7DC00770095 /* FileManager+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Ext.swift"; sourceTree = "<group>"; };
 		5EFFD1D222653C09002C05FC /* SavingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFFD1D522653C09002C05FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EFFD1D722653C09002C05FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +76,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E1FA4342267E7C400770095 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E1FA4352267E7DC00770095 /* FileManager+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5EFFD1C922653C09002C05FC = {
 			isa = PBXGroup;
 			children = (
+				5E1FA4342267E7C400770095 /* Extensions */,
 				5EFFD1D422653C09002C05FC /* SavingData */,
 				5EFFD1E922653C0A002C05FC /* SavingDataTests */,
 				5EFFD1F422653C0A002C05FC /* SavingDataUITests */,
@@ -97,11 +108,11 @@
 		5EFFD1D422653C09002C05FC /* SavingData */ = {
 			isa = PBXGroup;
 			children = (
-				5EFFD1D522653C09002C05FC /* AppDelegate.swift */,
+				5EFFD20322653C20002C05FC /* Application */,
 				5EFFD1D722653C09002C05FC /* ViewController.swift */,
 				5EFFD1D922653C09002C05FC /* Main.storyboard */,
-				5EFFD1DC22653C0A002C05FC /* Assets.xcassets */,
 				5EFFD1DE22653C0A002C05FC /* LaunchScreen.storyboard */,
+				5EFFD1DC22653C0A002C05FC /* Assets.xcassets */,
 				5EFFD1E122653C0A002C05FC /* Info.plist */,
 			);
 			path = SavingData;
@@ -123,6 +134,14 @@
 				5EFFD1F722653C0A002C05FC /* Info.plist */,
 			);
 			path = SavingDataUITests;
+			sourceTree = "<group>";
+		};
+		5EFFD20322653C20002C05FC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5EFFD1D522653C09002C05FC /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1FA4362267E7DC00770095 /* FileManager+Ext.swift in Sources */,
 				5EFFD1D822653C09002C05FC /* ViewController.swift in Sources */,
 				5EFFD1D622653C09002C05FC /* AppDelegate.swift in Sources */,
 			);
